@@ -1,0 +1,518 @@
+* {
+margin: 0;
+padding: 0;
+}
+@import url('https://fonts.googleapis.com/css2?family=Danfo&family=Jaro:opsz@6..72&family=LXGW+WenKai+Mono+TC&family=Lilita+One&display=swap');
+html {
+    width: 100%;
+    scroll-behavior: smooth;
+}
+body {
+ background-color: rgb(52, 51, 51);
+}
+/**************** NAVBAR ****************/
+header{
+height: 55px;
+width: 100%;
+display: flex;
+align-items: center;
+justify-content: space-between;
+position: fixed;
+}
+.acces1{
+background-color:white;
+width: 50%;
+display:flex;
+height: 100%;
+align-items: center;
+justify-content: space-around;
+font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.acces2{
+background-color:rgb(52, 51, 51);
+width: 50%;
+display:flex;
+align-items: center;
+justify-content: space-between;
+padding-right: 1%;
+padding-left: 1%;
+height: 100%;
+color: white;
+font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+font-size: 1em;
+}
+.acces2 ul{
+display: flex;
+align-items: center;
+width: 90%;
+justify-content: space-between;
+}
+ul{
+list-style-type: none;;
+}
+#logo {
+display: flex;
+justify-content:center;
+align-items: center;
+width: 60px;
+}
+img{
+width: 90%;
+
+}
+.links{
+width: 50%;
+}
+.links ul{
+display: flex;
+align-items: center;
+justify-content: space-between;
+width: 100%;
+}
+input {
+height: 30Px;
+width: 160px;
+background-image: url('assets/img/png-clipart-magnifying-glass-computer-icons-searching-glass-share-icon.png');
+background-size: 29px;
+background-color: white;
+opacity: 90%;
+background-repeat: no-repeat;
+text-align: center;
+font-size: 1em;
+border-radius: 9% 15px;
+margin-left: 10px;
+margin-right: 10px
+}
+.material-symbols-outlined {
+color: white;
+position: relative;
+}
+.kart{
+position: relative;
+top: 2px;
+}
+/* IMAGES AV CONTEXTE */
+.intro {
+display: flex;
+width: 100%;
+height: 500px;
+}
+.image {
+display: flex;
+background-image: url('assets/img/Premierimage.jpg');
+background-size: cover;
+height: 100%;
+width: 70%;
+border: solid 2px;border-color:#E7D0AC ;
+}
+.image2 {
+background-image: url('assets/img/deuxiemeimage - copie.jpg');
+background-size: cover;
+width: 30%;
+height: 100%;
+border: solid 2px;border-color:#E7D0AC ;
+}
+h1 {
+ display: flex;
+align-items: flex-end;
+justify-content: center;
+font-size: 2.9em;
+margin-left: 105px;
+margin-bottom: 3px;
+color: whitesmoke;
+font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+/* CONTEXTE */
+.imagecontexte {
+background-image: url('assets/img/jeunefille.png');
+background-size: cover;
+background-repeat: no-repeat;
+display: flex;
+height: 800px;
+flex-direction: column;
+justify-content: start;
+align-items: center;
+border: solid 3px;border-color:#E7D0AC ;
+gap: 15%;
+}
+h2 {
+display: flex;
+justify-content: center;
+padding-top: 8px;
+color: black;
+font-size: 2.7em;
+text-shadow: 1px 3px 2px white;
+font-family: "LXGW WenKai Mono TC", monospace;
+}
+p {
+color: #E7D0AC;
+margin-top: 3%;
+display: flex;
+justify-content: center;
+text-shadow: 1px 4px 2px black ;
+font-size: 2.7em;
+font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+padding-inline:3% ;
+}
+/* PRODUITS */
+main { 
+overflow: hidden;
+display: flex;
+flex-wrap: wrap;
+width: 100%;
+background-color: rgb(52, 51, 51);
+}
+h4 {
+width: fit-content;
+margin: 0 auto;
+margin-top: 8px;
+text-align: center;
+font-size: 2.3em;
+color: whitesmoke;
+text-shadow: 1px 3px 2px black;
+font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.produits {
+overflow: hidden;
+display: flex;
+flex-wrap: wrap;
+margin-top: 20px;
+height: 890px;
+background-color: rgb(52, 51, 51);
+ }
+.premiere {
+height: 100%;
+display: flex;
+flex-wrap: wrap;
+flex-direction: row;
+justify-content: center;
+margin-top: 15px;
+}
+article {
+background-size: contain;
+}
+.ventes, .ventes1, .ventes2, .ventes3, .ventes4, .ventes5, .ventes6, .ventes7 {
+cursor: pointer;
+margin: 20px 10px 10px 15px;
+width: 250px;
+height: 350px;
+background-color: grey;
+background-repeat: no-repeat;
+background-size: 220px 240px;
+background-position-x: center;
+border-radius: 10px;
+}
+.ventes {
+background-image: url('assets/img/dd1068-002__chaussures-nike-air-huarache-pour-homme-dd1068-002_01_11.jpg');
+}
+.ventes1 {
+background-image: url('assets/img/fa195aeef136.jpg');
+}
+.ventes2 {
+background-image: url('assets/img/SalomonAcsblanc40071459c.webp');
+}
+.ventes3 {
+background-image: url('assets/img/Couverture-Nike-Air-Max-Tn-Atlanta-DH0155-600.jpg');
+}
+.ventes4 {
+background-image: url('assets/img/1078576-full_product.jpg');
+}
+.ventes5 {
+background-image: url('assets/img/61XwYJNwRtL._SLDPMOBCAROUSELAUTOCROP288221_MCnd_AC_SR462,693_.jpg');
+}
+.ventes6 {
+background-image: url('assets/img/chaussures-air-force-1-luxe-pour-6TMVKW.webp');
+}
+.ventes7 {
+background-image: url('assets/img/web-a02827c-053-p.webp');
+}
+.ventes:hover, .ventes1:hover, .ventes2:hover, .ventes3:hover, .ventes4:hover, .ventes5:hover, .ventes6:hover, .ventes7:hover {
+opacity: 0.5;
+transform: scale(1.05);
+transition: 0.
+}
+h5{
+font-size: 1.1em;
+color: white;
+display: flex;
+justify-content: center;
+margin-top: 242px;
+font-family: Georgia, 'Times New Roman', Times, serif;
+}
+h6{
+font-size: 1em;
+color: white;
+display: flex;
+justify-content: center;
+font-family: Georgia, 'Times New Roman', Times, serif;
+}
+cite{
+color: white;
+opacity: 50%;
+font-size:0.8em ;
+margin-left: 72px;
+font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.avis{
+margin-top:-14px;
+overflow: hidden;
+font-size: 1.7em;
+height: 29px;
+display:flex;
+justify-content:center;
+}
+button{
+margin-left: 25px;
+margin-top: 6px;
+height: 28px;
+width: 200px;
+border-radius: 15px;
+color: white;
+display: flex;
+justify-content: center;
+font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+font-size: 1.2em;
+background-color:#267CE1;
+overflow: hidden;
+cursor: pointer;               
+}
+button:hover {
+background-color: black;
+color: #FFFAE1;
+cursor: pointer;
+transition: 0.3s ease-in-out;
+}
+/* CHARTES */
+.charte{ 
+display: flex;
+flex-wrap: wrap;
+justify-content: flex-start;
+background-color: #fff;
+border: solid 3px;
+border-color: #E7D0AC;
+}
+.txtcharte{
+
+margin-top: 3em;
+font-size: 1.5em ;
+padding: 0% 5%;
+font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.txtcharte::first-line {
+color: blue;
+  }
+.trait{ 
+display: flex;
+justify-content: center;
+align-items: center;
+width: 80%;
+height:3px;
+margin: 0 auto;
+background-color:black;
+margin-top: 3em;
+margin-bottom: 2em;
+}
+/* FOOTER */
+footer{
+background-color: #D9D9D9;
+width: 100%;
+height: 380px;
+overflow: hidden;
+
+}
+/* *********** MEDIA QUERY CHARTE************
+
+/* TABLETTE */
+@media screen and (min-width: 560px) and (max-width: 1100px) {
+    /* IMAGE AVANT CONTEXTE */
+    .intro {
+        height: 290px;
+    }
+    h1 {
+        font-size: 1.8em;
+        margin-left: 45px;
+    }
+    input{
+        background-size: contain;
+        height: 25px;
+    }
+    /* CONTEXTE */
+    .imagecontexte {
+        height: 520px;
+    }
+    h2 {
+        font-size: 1.7em;
+        padding-top: 5px;
+    }
+    p {
+        margin: 50px 20px;
+        font-size: 1.4em;
+    }
+    /* PRODUITS */
+    main { 
+        display: flex;
+        justify-content: left;
+        height: 1240px;
+    }
+    h4 {
+    font-size: 1.6em;
+      
+    }
+    .produits {
+        height: 1150px;
+    }
+    .ventes, .ventes1, .ventes2, .ventes3, .ventes4, .ventes5, .ventes6, .ventes7 {
+        width: 200px;
+        height: 300px;
+        background-size: 180px 200px;
+    }
+    h5 {
+        font-size: 1em;
+        margin-top: 202px;
+    }
+    cite {
+        font-size: 0.8em;
+        margin-left: 48px;
+    }
+    .avis {
+        font-size: 1.6em;
+    }
+    button {
+        margin-left: 29.5px;
+        margin-top: 5px;
+        height: 19px;
+        width: 140px;
+        font-size: 0.7em;
+    }
+    .charte {
+        height: 930px;
+    }
+    .titrecharte {
+        font-size: 2.1em;
+    }
+    .textcharte {
+        font-size: 1.5em;
+    }
+    /* CHARTE */
+.charte{ 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    height: 900px;
+    background-color: #fff;
+    border: solid 3px;
+    border-color: #E7D0AC;
+    }
+    .titrecharte{
+    margin-left: 24%;
+    font-size: 2.5em;
+    }
+    .txtcharte{
+    font-size: 1.2em ;
+    padding: 0% 5%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    .trait{ 
+    width: 80%;
+    height:5px;
+    margin: 10%;
+    background-color:black;
+    }
+/* FOOTER */
+footer{
+    background-color: #D9D9D9;
+    width: 100%;
+    height: 299px;
+    overflow: hidden;
+    }
+}
+/* MOBILE */
+@media screen and (max-width: 550px) {
+   header{
+    height: 45px;
+   }
+    input{
+    display:none ;
+    }
+    #logo img {
+    padding-left: -60px;
+    width: 80%;
+    }
+    .acces1{
+    display: flex;
+    justify-content:start;
+    font-size: 1.2em;
+    height: 100%;
+    }
+    .links{
+    justify-content: space-between;
+    width: 100%;
+    }
+    .acces2{
+    display: flex;
+    justify-content: space-between;
+    }
+    nav {
+    width: 90%;
+    padding: 5px;
+    }
+    ul {
+    font-size: 0.7em;
+    }
+    /* IMAGE AVANT CONTEXTE */
+    .intro {
+    height: 150px;
+    }
+    h1{
+    margin-left: 4%;
+    font-size: 1em;
+  }
+    /* CONTEXTE */
+    h2 {
+    margin-top: -6px;
+    font-size: 0.8em;
+    }
+    .imagecontexte {
+    background-size: cover;
+    height: 270px;
+    }
+    p {
+    margin: 10px 2px;
+    font-size: 0.85em;
+    overflow: hidden;
+    }
+    /* PRODUITS */
+    main {
+    height: 3400px;
+    }
+    .produits {
+    height: 3200px;
+    background-color: rgb(52, 51, 51);
+    }
+    h4 {
+    margin-top: 25px;
+    font-size: 1.6em;
+    }
+    /* CHARTE */
+    .charte{ 
+    height: 1000px;
+    }
+    .titrecharte{
+    margin-left: 18%;
+    font-size: 1.5em;
+    }
+    .txtcharte{
+    font-size: 1em ;
+    margin-right: -3px;
+    }
+    .trait{ 
+    width: 80%;
+    height:3px;
+    margin: 10%;
+    background-color:black;
+    }
+    /* FOOTER */
+    footer{
+    height: 160px;
+    }
+}
