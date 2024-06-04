@@ -2,13 +2,12 @@
 margin: 0;
 padding: 0;
 }
-@import url('https://fonts.googleapis.com/css2?family=Danfo&family=Jaro:opsz@6..72&family=LXGW+WenKai+Mono+TC&family=Lilita+One&display=swap');
 html {
-    width: 100%;
-    scroll-behavior: smooth;
+width: 100%;
+scroll-behavior: smooth;
 }
 body {
- background-color: rgb(52, 51, 51);
+background-color: rgb(52, 51, 51);
 }
 /**************** NAVBAR ****************/
 header{
@@ -58,7 +57,6 @@ width: 60px;
 }
 img{
 width: 90%;
-
 }
 .links{
 width: 50%;
@@ -113,7 +111,7 @@ height: 100%;
 border: solid 2px;border-color:#E7D0AC ;
 }
 h1 {
- display: flex;
+display: flex;
 align-items: flex-end;
 justify-content: center;
 font-size: 2.9em;
@@ -180,13 +178,15 @@ margin-top: 20px;
 height: 890px;
 background-color: rgb(52, 51, 51);
  }
-.premiere {
+.premiere 
+{
 height: 100%;
 display: flex;
 flex-wrap: wrap;
 flex-direction: row;
 justify-content: center;
 margin-top: 15px;
+
 }
 article {
 background-size: contain;
@@ -229,7 +229,7 @@ background-image: url('assets/img/web-a02827c-053-p.webp');
 .ventes:hover, .ventes1:hover, .ventes2:hover, .ventes3:hover, .ventes4:hover, .ventes5:hover, .ventes6:hover, .ventes7:hover {
 opacity: 0.5;
 transform: scale(1.05);
-transition: 0.
+transition: 0.6s
 }
 h5{
 font-size: 1.1em;
@@ -299,8 +299,8 @@ padding: 0% 5%;
 font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 .txtcharte::first-line {
-color: blue;
-  }
+font-size: 1.2em;
+}
 .trait{ 
 display: flex;
 justify-content: center;
@@ -313,13 +313,80 @@ margin-top: 3em;
 margin-bottom: 2em;
 }
 /* FOOTER */
-footer{
-background-color: #D9D9D9;
-width: 100%;
-height: 380px;
-overflow: hidden;
-
-}
+.bas-de-page{
+    width: 100%;
+    height: fit-content;
+    }
+    .bas-de-page a{
+    color: inherit;
+    text-decoration: none;
+    }
+    .sections{
+    width: 100%;
+    margin: 0 auto;
+    background: #D9D9D9;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    }
+    .section{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    }
+    .section a{
+    font-size: 1.5em;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    .section span{
+    font-size: 28px;
+    text-decoration: underline;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    .section p{
+    font-size: 0.9em;
+    color: white;
+    font-family: fantasy;
+    }
+    .section .links{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    }
+    .links li{
+    display: flex;
+    justify-content: space-around;
+    }
+    .pays{
+    width: 100%;
+    background: #444141;
+    display: flex;
+    justify-content: center;
+    }
+    .fa-brands{
+    font-size: 1.5em;
+    display: flex;
+    justify-content: space-between;
+    }
+    .pays .section{
+    width: 70%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    }
+    .pays span{
+    color: white;
+    }
+    .pays img{
+    width: 38%;
+    } /* FIN DE FOOTER */
 /* *********** MEDIA QUERY CHARTE************
 
 /* TABLETTE */
@@ -420,12 +487,17 @@ overflow: hidden;
     }
 /* FOOTER */
 footer{
-    background-color: #D9D9D9;
     width: 100%;
-    height: 299px;
-    overflow: hidden;
-    }
+    height: 100%;
 }
+.pays{
+    display: flex;
+    justify-content: center;
+
+}
+.pays img{
+    width: 50%;
+}}
 /* MOBILE */
 @media screen and (max-width: 550px) {
    header{
@@ -435,7 +507,6 @@ footer{
     display:none ;
     }
     #logo img {
-    padding-left: -60px;
     width: 80%;
     }
     .acces1{
@@ -515,4 +586,29 @@ footer{
     footer{
     height: 160px;
     }
-}
+        .sections{
+            flex-direction: column;
+            align-items: center;
+            gap: 30px;
+        }
+    .section a{
+        font-size: 1em ;
+    }
+    .section span{
+        font-size: 1.3em ;
+    }
+        .section{
+            width: 90%;
+        }
+    
+        .section:nth-child(2){
+            display: flex;
+            justify-content: end;
+            align-items: end;
+            text-align: center;
+        }
+        .pays img{
+            width: 60%;
+        }
+      }
+    
